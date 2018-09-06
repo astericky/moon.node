@@ -7,11 +7,11 @@ const helment = require('helmet'); // https://github.com/helmetjs/helmet
 const morgan = require('morgan'); // https://expressjs.com/en/resources/middleware/morgan.html
 const Joi = require('joi'); // https://www.npmjs.com/package/joi
 
-// Routes for views
+// @TODO this will be removed
+// Routes
 const main = require('./routes/main');
-
-// Routes for coins
 const coins = require('./routes/coins');
+const portfolio = require('./routes/portfolio');
 const reqLogger = require('./middleware/reqLogger');
 const app = express();
 
@@ -28,6 +28,7 @@ app.use(express.static('public'));
 app.use(helment());
 app.use('/', main);
 app.use('/api/coins', coins);
+app.use('/api/portfolio', portfolio);
 
 if (app.get('env') === 'development') {
   debug('Morgan enabled...');
