@@ -1,0 +1,31 @@
+{
+  "name": "moon.node",
+  "version": "1.0.0",
+  "description": "The Node server for moonholdings.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Futuratum/moon.node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Futuratum/moon.node/issues"
+  },
+  "homepage": "https://github.com/Futuratum/moon.node#readme",
+  "dependencies": {
+    "config": "^2.0.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "http": "0.0.0",
+    "joi": "^13.1.0",
+    "mongodb": "^3.1.4",
+    "morgan": "^1.9.0",
+    "ramda": "^0.25.0"
+  }
+}
